@@ -1,0 +1,16 @@
+# プロジェクト設定
+project_id = "test-recommend-engine-20250609"
+region     = "asia-northeast1"
+zone       = "asia-northeast1-a"
+
+# App Engine設定
+app_engine_location = "asia-northeast1"
+
+# サービスアカウント
+service_account_email = "terraform-sa@test-recommend-engine-20250609.iam.gserviceaccount.com"
+
+# 環境設定
+environment = "dev"
+
+# コスト設定
+cost_threshold = 10.0

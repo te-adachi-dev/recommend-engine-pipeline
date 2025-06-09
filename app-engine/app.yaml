@@ -1,0 +1,20 @@
+runtime: python39
+
+service: default
+
+basic_scaling:
+  max_instances: 2
+  idle_timeout: 10m
+
+resources:
+  cpu: 1
+  memory_gb: 0.5
+  disk_size_gb: 10
+
+automatic_scaling:
+  min_instances: 0
+  max_instances: 2
+  target_cpu_utilization: 0.6
+
+env_variables:
+  GOOGLE_CLOUD_PROJECT: test-recommend-engine-20250609
