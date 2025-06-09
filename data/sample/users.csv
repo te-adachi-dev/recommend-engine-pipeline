@@ -1,0 +1,16 @@
+user_id,age,gender,city,registration_date
+1001,25,male,Tokyo,2024-01-15 10:00:00
+1002,32,female,Osaka,2024-01-16 11:30:00
+1003,28,male,Nagoya,2024-01-17 14:20:00
+1004,35,female,Tokyo,2024-01-18 09:45:00
+1005,22,male,Fukuoka,2024-01-19 16:10:00
+1006,29,female,Sapporo,2024-01-20 13:25:00
+1007,45,male,Tokyo,2024-01-21 08:15:00
+1008,31,female,Kyoto,2024-01-22 15:40:00
+1009,27,male,Hiroshima,2024-01-23 12:00:00
+1010,38,female,Sendai,2024-01-24 17:30:00
+1011,24,male,Tokyo,2024-01-25 10:50:00
+1012,33,female,Osaka,2024-01-26 14:15:00
+1013,26,male,Yokohama,2024-01-27 11:25:00
+1014,41,female,Kobe,2024-01-28 09:30:00
+1015,23,male,Chiba,2024-01-29 16:45:00

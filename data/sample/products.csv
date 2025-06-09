@@ -1,0 +1,26 @@
+product_id,product_name,category,price,brand
+2001,スマートフォン Pro,Electronics,89800,TechBrand
+2002,ワイヤレスイヤホン,Electronics,15800,AudioTech
+2003,ノートパソコン Ultra,Electronics,124800,CompuBrand
+2004,スマートウォッチ,Electronics,32800,WearTech
+2005,タブレット Mini,Electronics,45800,TechBrand
+2006,Bluetooth スピーカー,Electronics,8900,AudioTech
+2007,ゲーミングマウス,Electronics,6800,GameTech
+2008,外付けHDD 2TB,Electronics,12800,StorageTech
+2009,Webカメラ HD,Electronics,5900,CamTech
+2010,USB-C ケーブル,Electronics,1200,CableTech
+2011,オーガニック コーヒー豆,Food,2800,CoffeeMaster
+2012,プレミアム 緑茶,Food,3200,TeaHouse
+2013,アーモンドミルク,Food,680,HealthyFood
+2014,グラノーラ ミックス,Food,1480,MorningBest
+2015,ココナッツオイル,Food,1980,NaturalLife
+2016,ランニングシューズ,Sports,14800,SportsBrand
+2017,ヨガマット,Sports,4800,FitnessPro
+2018,プロテインパウダー,Sports,5800,MuscleMax
+2019,フィットネストラッカー,Sports,8900,HealthTech
+2020,水筒 ステンレス,Sports,2400,HydroTech
+2021,ビジネスバッグ,Fashion,18800,LeatherCraft
+2022,カジュアルシャツ,Fashion,5800,StyleBrand
+2023,ジーンズ スリム,Fashion,8900,DenimWorks
+2024,スニーカー クラシック,Fashion,12800,ShoeMaster
+2025,腕時計 アナログ,Fashion,24800,TimePiece
