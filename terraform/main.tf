@@ -52,10 +52,21 @@ resource "google_bigquery_dataset" "recommend_dataset" {
   # データ保持期間設定（コスト最適化）
   default_table_expiration_ms = 2592000000 # 30日
   
-  # アクセス制御
+  # アクセス制御を修正
   access {
     role          = "OWNER"
     user_by_email = var.service_account_email
+  }
+  
+  # プロジェクトエディターにも権限付与
+  access {
+    role         = "OWNER"
+    special_group = "projectOwners"
+  }
+  
+  access {
+    role         = "WRITER"
+    special_group = "projectEditors"
   }
 }
 
@@ -257,30 +268,3 @@ resource "google_cloud_scheduler_job" "daily_pipeline" {
   }
 }
 
-# Cloud Monitoring（簡易アラート）
-resource "google_monitoring_alert_policy" "high_cost_alert" {
-  display_name = "高コストアラート"
-  combiner     = "OR"
-  
-  conditions {
-    display_name = "課金額が閾値を超過"
-    
-    condition_threshold {
-      filter          = "resource.type=\"billing_account\""
-      comparison      = "COMPARISON_GREATER_THAN"
-      threshold_value = 10.0 # $10 USD
-      duration        = "300s"
-      
-      aggregations {
-        alignment_period   = "300s"
-        per_series_aligner = "ALIGN_RATE"
-      }
-    }
-  }
-  
-  notification_channels = []
-  
-  alert_strategy {
-    auto_close = "1800s"
-  }
-}
